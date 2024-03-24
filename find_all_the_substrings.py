@@ -1,5 +1,7 @@
-word = input("Please type in a word: ")
-char = input("Please type in a character: ")
+#word = input("Please type in a word: ")
+word = "incomprehensibilities"
+#char = input("Please type in a character: ")
+char = 'i'
 
 result = ''
 index = 0
