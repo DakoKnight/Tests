@@ -1,16 +1,14 @@
 limit = int(input("Limit: "))
 
 sum = 0
-number = 0
 output = ""
+number = 1
 
-while limit > sum:
+while sum < limit:
+    sum += number
+    output += str(number)
+    if sum < limit:
+        output += ' + '
     number += 1
-    if sum != limit:
-        output += str(number)
-        sum += number
-        if sum + number >= limit:
-            break
-        output += " + "
-    
-print("The consecutive sum:", output, "=", sum)
+        
+print(f"The consecutive sum: {output} = {sum}")

@@ -7,7 +7,7 @@ while True:
     if word == 'end' or last_word == word:
         break
 
-    story += word + ' '
+    story = story + word + ' '
     last_word = word
 
 print(story)

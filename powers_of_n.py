@@ -1,7 +1,10 @@
 limmit = int(input("Upper limit: "))
-base = int(input("Base"))
-number = 1
+base = int(input("Base: "))
+number = 0
+result = 0
 
-while limmit > number:
-    print(number)
-    number = base ** number
+while limmit > result:
+    result = base ** number
+    number += 1
+    if result <= limmit:
+        print(result)

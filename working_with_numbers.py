@@ -8,18 +8,14 @@ print("Please type in interger numbers. Type in 0 to finish")
 
 while True:
     number = int(input("Number: "))
-    count += 1
-
     if number == 0:
         break
-    
     elif number > 0:
         pos_count += 1
-
     else:
         neg_count += 1
-
     sum += number
+    count += 1
 
 mean = sum / (count - 1)
 
